@@ -10,7 +10,7 @@ const forecast = (latitude,longitude,callback) => {
         } else if(body.error){
             callback('enter a valid co-ordinates!',undefined)
         } else{
-            callback(undefined,body.current.weather_descriptions[0] + ".  It is currently "  + body.current.temperature + "degress out there. It feels like  " + body.current.pressure + "pressure of air which is risky because of this the speed of the wind is" + body.current.wind_speed) 
+            callback(undefined,body.current.weather_descriptions[0] + ".  It is currently "  + body.current.temperature + "degress out there. It feels like  " + body.current.pressure + "pressure of air which is risky because of this the speed of the wind is" + body.current.wind_speed + "instructing people to please maintain guidelines provided by respective officials ") 
             console.log('CO-ORDINATES has been fetched successfully!')
            
         }
