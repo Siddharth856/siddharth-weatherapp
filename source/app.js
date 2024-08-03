@@ -6,6 +6,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // define path for express
 const publicdirectorypath = path.join(__dirname, '../public')
@@ -99,6 +100,6 @@ app.get('/help/*',(req,res) => {            //404 page using wildcard
 
 
 // TO GET OP IN BROWSER WINDOW PORT3000 IS WRITTEN
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is running on port 3000!')
 })               
