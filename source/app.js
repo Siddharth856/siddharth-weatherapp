@@ -39,7 +39,7 @@ app.get('/about',(req,res) => {                // app.com (root route/1st route/
 
 app.get('/help',(req,res) => {                  // app.com/help(/help route, 2nd route)
     res.render('help',{
-        helpText:"THIS APPLICATION PROVIDES  YOU THE PROPER WEATHER FORECAST INFORMATION FOR RESPECTIVE LOCATION ",
+        helpText:"THIS APPLICATION PROVIDES  YOU THE PROPER WEATHER FORECAST INFORMATION FOR RESPECTIVE LOCATION WHICH HELPS USER TO FETCH EXACT WEATHER OF RESPECTIVE LOCATION ",
         title:'Weather app!',
         devloper:'siddharth tiwari'
     })
